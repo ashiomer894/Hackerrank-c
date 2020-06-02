@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int n,sum=0,temp,num;
+    scanf("%d", &n);
+    temp=n;
+    while(temp>0)
+    {
+        num=temp%10;
+        sum=sum+num;
+        temp=temp/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
